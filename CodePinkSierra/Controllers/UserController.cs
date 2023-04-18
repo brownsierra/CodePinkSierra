@@ -27,4 +27,8 @@ public class UserController : Controller
     public IActionResult Laelynn() {
         return View("Laelynn");
     }
+    [HttpGet("codepink/studentlogin")]
+    public IActionResult Login() {
+        return View("Login");
+    }
 }

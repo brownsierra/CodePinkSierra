@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 
-namespace CodePinkJackie.Controllers;
+namespace CodePinkSierra.Controllers;
 
 public class HomeController : Controller
 {
@@ -22,6 +22,7 @@ public class HomeController : Controller
     {
         return View("Index");
     }
+
 
     public IActionResult Privacy()
     {
