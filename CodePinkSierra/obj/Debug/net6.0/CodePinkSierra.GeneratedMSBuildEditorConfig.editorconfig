@@ -15,10 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\brown\OneDrive\Desktop\CodePinkSierra\codepinksierra
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Home/Home.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -59,8 +55,76 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/AddOne.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRPbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/Earphones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFYXJwaG9uZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/Furniture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxGdXJuaXR1cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/CookiePopup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXENvb2tpZVBvcHVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_GirlsWeHelped.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9HaXJsc1dlSGVscGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_Herotop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9IZXJvdG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_LaelynnPromo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9MYWVseW5uUHJvbW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_Twist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9Ud2lzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IndexPartials/_ZoomKits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFBhcnRpYWxzXF9ab29tS2l0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/IPads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJUGFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/Laptops.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMYXB0b3BzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/Monitors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNb25pdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/ProductPartials/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0UGFydGlhbHNcX0Zvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/ProductPartials/_Nav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0UGFydGlhbHNcX05hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/ProductPartials/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0UGFydGlhbHNcX05hdkJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/Reviews.cshtml]
@@ -71,16 +135,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/TechAccessories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxUZWNoQWNjZXNzb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/ViewOne.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxWaWV3T25lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/ViewProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxWaWV3UHJvZHVjdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/_Footer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfRm9vdGVyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Product/_NavBar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfTmF2QmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/Shared/Error.cshtml]
@@ -91,8 +155,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/User/AdminLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZG1pbkxvZ2luLmNzaHRtbA==
+[C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/User/ComingSoon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDb21pbmdTb29uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/brown/OneDrive/Desktop/CodePinkSierra/codepinksierra/Views/User/Laelynn.cshtml]

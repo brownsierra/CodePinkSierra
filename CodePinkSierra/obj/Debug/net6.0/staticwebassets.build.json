@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j3tY4R2oZuROfCCursdrLVSMiamnDk7JWvUASm0H1Ko=",
+  "Hash": "dPwPa3+G3dHjls+ehS7vWCdn9+9wlCz6cz9w58KXXuY=",
   "Source": "CodePinkSierra",
   "BasePath": "_content/CodePinkSierra",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CodePinkSierra.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\index\\home.css",
-      "SourceId": "CodePinkSierra",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
-      "BasePath": "_content/CodePinkSierra",
-      "RelativePath": "css/index/home.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\index\\home.css"
     },
     {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\index\\index.css",
@@ -136,6 +119,40 @@
       "OriginalItemSpec": "wwwroot\\css\\laelynn\\login.css"
     },
     {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\products\\addproduct.css",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "css/products/addproduct.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\products\\addproduct.css"
+    },
+    {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\products\\laptops.css",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "css/products/laptops.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\products\\laptops.css"
+    },
+    {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\products\\reviews.css",
       "SourceId": "CodePinkSierra",
       "SourceType": "Discovered",
@@ -168,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\products\\shop.css"
+    },
+    {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\products\\viewone.css",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "css/products/viewone.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\products\\viewone.css"
     },
     {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\css\\site.css",
@@ -780,6 +814,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\laelynnimages\\linkedlogo.png"
+    },
+    {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\images\\laelynnimages\\loginpic.png",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "images/laelynnimages/loginpic.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\laelynnimages\\loginpic.png"
     },
     {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\images\\laelynnimages\\mh.png",

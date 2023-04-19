@@ -9,6 +9,12 @@
         <a class="topnava" href="/">STUDENT LOGIN</a>
         <a class="topnava" href="/">SHOP</a>
         <a class="topnava" href="/">PRODUCT REVIEWS</a>
+        @if (Context.Session.GetInt32("uid") != null)
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">LOGOUT</a>
+                </li>
+            }
         <a class="topnava" href="/"><img id="cartimg" src="~/images/laelynnimages/whitecart.png" alt="cart"></a>
     </div>
 </nav>    

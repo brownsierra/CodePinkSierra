@@ -28,26 +28,70 @@ public class ProductController : Controller
 
 
 
-    [HttpGet("/codepink")]
+    [HttpGet("")]
     public IActionResult CodePink()
     {
         return View("Index");
     }
 
+    [HttpGet("/codepink/reviews")]
+    public IActionResult Reviews()
+    {
+        return View("Reviews");
+    }
+
+    [HttpGet("/codepink/shop/laptops")]
+    public IActionResult Laptops()
+    {
+        List<Product> Laptop = db.Products.Where(p => p.Category == "Laptops").ToList();
+        return View("Laptops", Laptop);
+    }
+
+    [HttpGet("/codepink/shop/monitorsanddesktops")]
+    public IActionResult Monitors()
+    {
+        return View("Monitors");
+    }
+
+    [HttpGet("/codepink/shop/tablets")]
+    public IActionResult Tablets()
+    {
+        return View("IPads");
+    }
+    
+    [HttpGet("/codepink/shop/furniture")]
+    public IActionResult Furniture()
+    {
+        return View("Furniture");
+    }
+    
+    [HttpGet("/codepink/shop/deskaccessories")]
+    public IActionResult DeskAccessories()
+    {
+        return View("DeskAccessories");
+    }
+        
+    [HttpGet("/codepink/shop/earphones")]
+    public IActionResult Earphones()
+    {
+        return View("Earphones");
+    }
+
+    
+    [HttpGet("/codepink/shop/techaccessories")]
+    public IActionResult TechA()
+    {
+        return View("TechAccessories");
+    }
 
     [HttpGet("/codepink/shop")]
     public IActionResult AllProducts()
     {
-        List<Product> addedProducts = db.Products.ToList();
+        List<Product> addedProducts = db.Products
+        .OrderBy(p => p.Category).ToList();
 
         return View("Shop", addedProducts);
         // return View("AllProd");
-    }
-
-    [HttpGet("/codepink/reviews")]
-    public IActionResult Reviews()
-    {
-        return View("Reviews", "Product");
     }
 
     [HttpGet("/codepink/{productId}")]
@@ -68,7 +112,7 @@ public class ProductController : Controller
     }
 
 
-    // [SessionCheck]
+    [SessionCheck]
     [HttpGet("/codepink/addProduct")]
     public IActionResult AddOne()
     {
@@ -76,7 +120,7 @@ public class ProductController : Controller
     }
 
 
-    // [SessionCheck]
+    [SessionCheck]
     [HttpPost("/codepink/createProduct")]
     public IActionResult CreateProduct(Product p)
     {
@@ -88,10 +132,10 @@ public class ProductController : Controller
             db.SaveChanges();
             return RedirectToAction("AllProducts");
         }
-        return View("AddProduct");
+        return View("AddOne");
     }
 
-    // [SessionCheck]
+    [SessionCheck]
     [HttpGet("/codepink/edit/{productId}")]
     public IActionResult EditProduct(int productId)
     {
@@ -109,7 +153,7 @@ public class ProductController : Controller
     }
 
 
-    // [SessionCheck]
+    [SessionCheck]
     [HttpPost("/codepink/updateProduct/{productId}")]
     public IActionResult UpdateProduct(Product p, int productId)
     {
@@ -142,7 +186,7 @@ public class ProductController : Controller
         }
     }
 
-    // [SessionCheck]
+    [SessionCheck]
     [HttpGet("/codepink/delete/{productId}")]
     public IActionResult DeleteProduct(int productId)
     {
@@ -156,6 +200,7 @@ public class ProductController : Controller
     }
 
 
+
     [HttpPost("/codepink/{id}/cart/add")]
     public IActionResult AddToCart(int id, Product addedProduct)
     {
@@ -163,6 +208,7 @@ public class ProductController : Controller
         Product? dbProduct = db.Products.FirstOrDefault(t => t.ProductId == id);
         if (dbProduct == null)
         {
+            Console.WriteLine("Not added to cart");
             return RedirectToAction("AllProducts");
             // Console.BackgroundColor = ConsoleColor.Black;
             // Console.ForegroundColor = ConsoleColor.Red;
@@ -174,7 +220,8 @@ public class ProductController : Controller
         db.Products.Update(dbProduct);
         db.SaveChanges();
 
-        return RedirectToAction("AllProducts");
+        Console.WriteLine("Added to cart");
+        return RedirectToAction("ViewCart");
     }
 
 
@@ -214,22 +261,21 @@ public class ProductController : Controller
     {
         return View("Checkout");
     }
-
 }
 
 
-// public class SessionCheckAttribute : ActionFilterAttribute
-// {
-//     public override void OnActionExecuting(ActionExecutingContext context)
-//     {
-//         // Find the session, but remember it may be null so we need int?
-//         int? uid = context.HttpContext.Session.GetInt32("uid");
-//         // Check to see if we got back null
-//         if (uid == null)
-//         {
-//             // Redirect to the Index page if there was nothing in session
-//             // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
-//             context.Result = new RedirectToActionResult("CodePink", "Product", null);
-//         }
-//     }
-// }
+public class SessionCheckAttribute : ActionFilterAttribute
+{
+    public override void OnActionExecuting(ActionExecutingContext context)
+    {
+        // Find the session, but remember it may be null so we need int?
+        int? uid = context.HttpContext.Session.GetInt32("uid");
+        // Check to see if we got back null
+        if (uid == null)
+        {
+            // Redirect to the Index page if there was nothing in session
+            // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
+            context.Result = new RedirectToActionResult("CodePink", "Product", null);
+        }
+    }
+}
