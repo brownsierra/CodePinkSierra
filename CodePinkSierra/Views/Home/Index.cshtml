@@ -15,11 +15,16 @@
         @await Html.PartialAsync("IndexPartials/_NavBar")
     </header>
     <main>
-        <H1>THE OFFICIAL STORE FOR GIRLS IN TECH.</H1>
-        <H1>BUT WITH A TWIST [DO SOME COOL TWIST GRAPHIC HERE]</H1>
+        @await Html.PartialAsync("IndexPartials/_Herotop")
+        @await Html.PartialAsync("IndexPartials/_Twist")
         @await Html.PartialAsync("IndexPartials/_LaelynnPromo")
         @await Html.PartialAsync("IndexPartials/_ZoomKits")
+        @await Html.PartialAsync("IndexPartials/_GirlsWeHelped")
     </main>
+    <footer>
+        @await Html.PartialAsync("IndexPartials/_Footer")
+    </footer>
+    <script src="~/js/index/index.js"></script>
 </body>
 </html>
 

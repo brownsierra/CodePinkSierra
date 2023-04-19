@@ -12,46 +12,24 @@ window.addEventListener('scroll', checkScroll);
 
 
 
-// LAELYNN PROMO
-const html = document.documentElement;
-const canvas = document.getElementById("hero-lightpass");
-const context = canvas.getContext("2d");
+// COOKIE POPUP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$(document).ready(function(){
+	// show automatically after 1s
+	setTimeout(showModal,1000);
+	$("#closeBtn").click(function(){
+		$("#myModal").hide()
+	})
+	function showModal(){
+		// get value from localStorage
+		var is_modal_show = sessionStorage.getItem('alreadyShow');
+		if(is_modal_show != 'alredy shown'){
+			$("#myModal").show()
+			sessionStorage.setItem('alreadyShow','alredy shown');
+		}else{
+			console.log(is_modal_show);
+		}
+	}
+})
 
-const frameCount = 148;
-const currentFrame = index => (
-  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
-)
 
-const preloadImages = () => {
-  for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-  }
-};
-
-const img = new Image()
-img.src = currentFrame(1);
-canvas.width=1158;
-canvas.height=770;
-img.onload=function(){
-  context.drawImage(img, 0, 0);
-}
-
-const updateImage = index => {
-  img.src = currentFrame(index);
-  context.drawImage(img, 0, 0);
-}
-
-window.addEventListener('scroll', () => {  
-  const scrollTop = html.scrollTop;
-  const maxScrollTop = html.scrollHeight - window.innerHeight;
-  const scrollFraction = scrollTop / maxScrollTop;
-  const frameIndex = Math.min(
-    frameCount - 1,
-    Math.ceil(scrollFraction * frameCount)
-  );
-  
-  requestAnimationFrame(() => updateImage(frameIndex + 1))
-});
-
-preloadImages()
+// SLIDER

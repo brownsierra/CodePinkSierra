@@ -34,6 +34,7 @@ public class ProductController : Controller
         return View("Index");
     }
 
+
     [HttpGet("/codepink/shop")]
     public IActionResult AllProducts()
     {
@@ -41,6 +42,12 @@ public class ProductController : Controller
 
         return View("Shop", addedProducts);
         // return View("AllProd");
+    }
+
+    [HttpGet("/codepink/reviews")]
+    public IActionResult Reviews()
+    {
+        return View("Reviews", "Product");
     }
 
     [HttpGet("/codepink/{productId}")]
@@ -61,7 +68,7 @@ public class ProductController : Controller
     }
 
 
-    [SessionCheck]
+    // [SessionCheck]
     [HttpGet("/codepink/addProduct")]
     public IActionResult AddOne()
     {
@@ -69,7 +76,7 @@ public class ProductController : Controller
     }
 
 
-    [SessionCheck]
+    // [SessionCheck]
     [HttpPost("/codepink/createProduct")]
     public IActionResult CreateProduct(Product p)
     {
@@ -84,7 +91,7 @@ public class ProductController : Controller
         return View("AddProduct");
     }
 
-    [SessionCheck]
+    // [SessionCheck]
     [HttpGet("/codepink/edit/{productId}")]
     public IActionResult EditProduct(int productId)
     {
@@ -102,7 +109,7 @@ public class ProductController : Controller
     }
 
 
-    [SessionCheck]
+    // [SessionCheck]
     [HttpPost("/codepink/updateProduct/{productId}")]
     public IActionResult UpdateProduct(Product p, int productId)
     {
@@ -135,7 +142,7 @@ public class ProductController : Controller
         }
     }
 
-    [SessionCheck]
+    // [SessionCheck]
     [HttpGet("/codepink/delete/{productId}")]
     public IActionResult DeleteProduct(int productId)
     {
@@ -211,18 +218,18 @@ public class ProductController : Controller
 }
 
 
-public class SessionCheckAttribute : ActionFilterAttribute
-{
-    public override void OnActionExecuting(ActionExecutingContext context)
-    {
-        // Find the session, but remember it may be null so we need int?
-        int? uid = context.HttpContext.Session.GetInt32("uid");
-        // Check to see if we got back null
-        if (uid == null)
-        {
-            // Redirect to the Index page if there was nothing in session
-            // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
-            context.Result = new RedirectToActionResult("CodePink", "Product", null);
-        }
-    }
-}
+// public class SessionCheckAttribute : ActionFilterAttribute
+// {
+//     public override void OnActionExecuting(ActionExecutingContext context)
+//     {
+//         // Find the session, but remember it may be null so we need int?
+//         int? uid = context.HttpContext.Session.GetInt32("uid");
+//         // Check to see if we got back null
+//         if (uid == null)
+//         {
+//             // Redirect to the Index page if there was nothing in session
+//             // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
+//             context.Result = new RedirectToActionResult("CodePink", "Product", null);
+//         }
+//     }
+// }
