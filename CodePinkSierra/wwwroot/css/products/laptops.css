@@ -1,18 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
 }
-
 
 /*****NAV!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!****/
 nav {
+  background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 30px;
-	margin-top: 5vh;
+    height: 14vh;
 	margin-bottom: 40px;
 	align-items: flex-start;
 }
@@ -21,6 +19,7 @@ nav div a {
 	font-family: 'Clash Display';
 	font-weight: bold;
 	text-decoration: none;
+
 }
 #cartimg {
 	height: 4vh;
@@ -32,6 +31,8 @@ nav div a {
 .middleofnav {
 	display: flex;
 	flex-direction: row;
+  height: 14vh;
+  align-items: center;
 }
 #submenu {
     /* left: 0;
@@ -59,6 +60,27 @@ li:hover ul#submenu {
 
 
 
+.productbanner {
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+
+.productbody {
+  display: flex;
+  flex-direction: row;
+  width: 1070px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.box{
+	width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 25px;
+}
 
 
 /* FOOTER */

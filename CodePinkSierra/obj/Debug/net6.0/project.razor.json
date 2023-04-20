@@ -18424,6 +18424,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\CodePinkSierra\\Views\\User\\CourseDashboard.cshtml",
+      "TargetPath": "Views\\User\\CourseDashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\CodePinkSierra\\Views\\Product\\IndexPartials\\_ZoomKits.cshtml",
       "TargetPath": "Views\\Product\\IndexPartials\\_ZoomKits.cshtml",
       "FileKind": "mvc"

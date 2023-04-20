@@ -84,8 +84,8 @@ public class ProductController : Controller
     [HttpGet("/codepink/shop/earphones")]
     public IActionResult Earphones()
     {
-        List<Product> Earphone = db.Products.Where(p => p.Category == "Laptops").ToList();
-        return View("Earphones");
+        List<Product> Earphone = db.Products.Where(p => p.Category == "earphones").ToList();
+        return View("Earphones", Earphone);
     }
 
     

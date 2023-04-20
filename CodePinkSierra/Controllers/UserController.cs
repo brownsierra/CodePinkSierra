@@ -28,10 +28,10 @@ public class UserController : Controller
         return View("Laelynn");
     }
 
-    [HttpGet("codepink/comingsoon")]
-    public IActionResult ComingSoon()
+    [HttpGet("codepink/coursedashboard")]
+    public IActionResult CourseDashboard()
     {
-        return View("ComingSoon");
+        return View("CourseDashboard");
     }
 
     [HttpGet("/codepink/login")]
@@ -80,7 +80,7 @@ public class UserController : Controller
         if (HttpContext.Session.GetInt32("uid") == 1) {
             return RedirectToAction("CodePink", "Product");
         }
-            return RedirectToAction("ComingSoon");
+            return RedirectToAction("CourseDashboard");
     }
 
     [HttpGet("register")]

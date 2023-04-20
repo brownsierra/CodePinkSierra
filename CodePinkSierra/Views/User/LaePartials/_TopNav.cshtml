@@ -4,8 +4,7 @@
     <div id="leftoftopnav">
         <a href="/"><img id="topcplogoimg" src="~/images/indeximgs/cplogo.png" alt="logo"></a>
     </div>
-    <div id="rightoftopnav">
-        @if (Context.Session.GetInt32("uid") != 1 || Context.Session.GetInt32("uid") != null)
+        @if (Context.Session.GetInt32("uid") != 1 && (Context.Session.GetInt32("uid") != null))
             {
                 <li>
                     <a class="topnava" href="/codepink/courses">COURSES</a>
