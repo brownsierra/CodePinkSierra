@@ -177,9 +177,3 @@ new Vue({
 
   
 
-//   SCROLL SECTION
-
-
-
-
-// /SIGNATURE PAD

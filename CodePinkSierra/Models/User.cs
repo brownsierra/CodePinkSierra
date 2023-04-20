@@ -35,7 +35,6 @@ public class User
     [DataType(DataType.Password)]
     [Compare("Password", ErrorMessage = "Passwords don't match, try again!")]
     public string ConfirmPassword { get; set; }
-    public List<Product> addedProduct { get; set; } = new List<Product>();
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;

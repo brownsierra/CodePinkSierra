@@ -87,7 +87,7 @@ public class UserController : Controller
     public IActionResult Register() {
         if(HttpContext.Session.GetInt32("uid") != null)
         {
-            return RedirectToAction("Index", "Product");
+            return Redirect("/register#SignupForLaelynn");
         }
         else 
         {

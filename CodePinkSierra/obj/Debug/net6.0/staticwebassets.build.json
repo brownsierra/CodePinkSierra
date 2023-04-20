@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dPwPa3+G3dHjls+ehS7vWCdn9+9wlCz6cz9w58KXXuY=",
+  "Hash": "n3C9l+cx6v5Kyy68o292PGQ0+GQDl0OUfqyPi7UeoLc=",
   "Source": "CodePinkSierra",
   "BasePath": "_content/CodePinkSierra",
   "Mode": "Default",
@@ -1290,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\index\\index.js"
+    },
+    {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\js\\JQuery.js",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "js/JQuery.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JQuery.js"
     },
     {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\js\\laelynn\\lae.js",
