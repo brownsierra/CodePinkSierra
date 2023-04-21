@@ -69,19 +69,34 @@ li:hover ul#submenu {
 .productbody {
   display: flex;
   flex-direction: row;
-  width: 1070px;
+  width: 90%;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: auto;
-  justify-content: space-evenly;
 }
-.box{
-	width:300px;
+.productcard{
+  margin-bottom: 10vh;
+  height: 45vh;
+  width: 300px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 	border-radius: 10px;
 	overflow: hidden;
 	margin: 25px;
+
+}
+.pricecartrow {
+  display: flex;
+  flex-direction: row;
+}
+.prodimg1 {
+  height: 20vh;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Gilroy';
+}
 
 /* FOOTER */
 footer {

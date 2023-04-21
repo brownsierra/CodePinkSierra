@@ -29,7 +29,7 @@ public class UserController : Controller
     }
 
     [HttpGet("codepink/coursedashboard")]
-    public IActionResult CourseDashboard()
+    public IActionResult Courses()
     {
         return View("CourseDashboard");
     }
@@ -80,7 +80,7 @@ public class UserController : Controller
         if (HttpContext.Session.GetInt32("uid") == 1) {
             return RedirectToAction("CodePink", "Product");
         }
-            return RedirectToAction("CourseDashboard");
+            return RedirectToAction("Courses");
     }
 
     [HttpGet("register")]
@@ -112,7 +112,7 @@ public class UserController : Controller
 
             HttpContext.Session.SetInt32("uid", newUser.UserId);
             HttpContext.Session.SetString("name", newUser.FirstName + " " + newUser.LastName);
-            return RedirectToAction("ComingSoon");
+            return RedirectToAction("Courses");
         }
     }
 
