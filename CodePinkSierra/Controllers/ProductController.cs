@@ -112,7 +112,7 @@ public class ProductController : Controller
         else
         {
             Console.WriteLine("I am here2");
-            return RedirectToAction("AllProducts", product);
+            return RedirectToAction("ViewOne", product);
         }
     }
 
