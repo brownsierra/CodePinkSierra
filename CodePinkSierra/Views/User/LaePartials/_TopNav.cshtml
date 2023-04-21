@@ -4,6 +4,7 @@
     <div id="leftoftopnav">
         <a href="/"><img id="topcplogoimg" src="~/images/indeximgs/cplogo.png" alt="logo"></a>
     </div>
+    <div class="rightoftopnav">
         @if (Context.Session.GetInt32("uid") != 1 && (Context.Session.GetInt32("uid") != null))
             {
                 <li>
@@ -21,14 +22,12 @@
         SHOP
         </a>
                 <ul id="submenu" class="classthree">
-                    <li><a href="/codepink/shop/laptops" class="dropdown-item">Laptops</a></li>
+                    <li  id="topsublink"><a href="/codepink/shop/laptops" class="dropdown-item">Laptops</a></li>
                     <li><a href="/codepink/shop/monitorsanddesktops" class="dropdown-item">Monitors & Desktops</a></li>
                     <li><a href="/codepink/shop/tablets" class="dropdown-item">iPads & Tablets</a></li>
                     <li><a href="/codepink/shop/earphones" class="dropdown-item">Earphones & Earbuds</a></li>
-                    <li><a href="/codepink/shop/furniture" class="dropdown-item">Zoom Kits</a></li>
-                    <li><a href="/codepink/shop/techaccessories" class="dropdown-item">Tech Accessories</a></li>
+                    <li><a href="/codepink/shop/accessories" class="dropdown-item">Accessories</a></li>
                     <li><a href="/codepink/shop/furniture" class="dropdown-item">Furniture</a></li>
-                    <li><a href="/codepink/shop/deskaccessories" class="dropdown-item">Desk Accessories</a></li>
                 </ul>
         </li>
         <li>

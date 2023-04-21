@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "glERyKGVMzXs18WKh2wy8qOm1/OvnHGDG+aY4RF7GTo=",
+  "Hash": "9v4R8dvezrh7bjSSx4lg1PdeyOU0VQoYZ57XBCG/rWg=",
   "Source": "CodePinkSierra",
   "BasePath": "_content/CodePinkSierra",
   "Mode": "Default",
@@ -799,6 +799,23 @@
       "OriginalItemSpec": "wwwroot\\images\\laelynnimages\\LaelynnLogo.png"
     },
     {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\images\\laelynnimages\\laptop.png",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "images/laelynnimages/laptop.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\laelynnimages\\laptop.png"
+    },
+    {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\images\\laelynnimages\\LEARN.png",
       "SourceId": "CodePinkSierra",
       "SourceType": "Discovered",
@@ -933,6 +950,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\laelynnimages\\signupbg.png"
+    },
+    {
+      "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\images\\laelynnimages\\sld2text.png",
+      "SourceId": "CodePinkSierra",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\",
+      "BasePath": "_content/CodePinkSierra",
+      "RelativePath": "images/laelynnimages/sld2text.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\laelynnimages\\sld2text.png"
     },
     {
       "Identity": "C:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\codepinksierra\\wwwroot\\images\\laelynnimages\\sld3.png",

@@ -13,35 +13,34 @@
             @await Html.PartialAsync("ProductPartials/_Nav")
         </header>
         <main>
-        <div class="middle">
-            <h1 class="header">Add new products</h1>
-            <form class="form" asp-controller="Product" asp-action="CreateProduct" method="Post">
-                <div class="section">
-                    <label class="label" asp-for="Name">Product Name :</label>
-                    <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
-                    <input class="form-control" asp-for="Name">
-                </div>
+            <div class="middle">
+    <h1 class="header">Edit @Model.Name</h1>
+    <form class="form" action="/codepink/updateProduct/@Model.ProductId" method="Post">
+        <div class="section">
+            <label class="label" asp-for="Name" value="@Model.Name">Product Name :</label>
+            <input class="form-control" asp-for="Name">
+            <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+        </div>
         @* <div class="mb-3">
             <label asp-for="Category">Category :</label>
             <span asp-validation-for="Category" class="text-danger font-weight-bold"></span>
             <input class="form-control" asp-for="Category">
             </div> *@
-        <section id="catsection">
-        <label id="catlabel" class="label" for="category">Category :</label>
-        <select class="select" name="Category" id="Category">
-            <option class="option" value="Laptops">Laptops</option>
-            <option class="option" value="Monitors">Monitor or Desktop</option>
-            <option class="option" value="iPads">IPads or Tablets</option>
-            <option class="option" value="Earphones">Earphones or Headphones</option>
-            <option class="option" value="Accessories">Tech Accessories</option>
-            <option class="option" value="Furniture">Furniture</option>
-            <span asp-validation-for="Category" class="text-danger font-weight-bold"></span>
+        <label class="label" for="category">Category :</label>
+        <span asp-validation-for="Category" class="text-danger font-weight-bold"></span>
+        <select name="Category" id="Category">
+            <option value="Laptops">Laptops</option>
+            <option value="Headphones">Monitor or Desktop</option>
+            <option value="Headphones">IPads or Tablets</option>
+            <option value="Headphones">Earphones or Headphones</option>
+            <option value="Accessories">Tech Accessories</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Desk Accessories">Desk Accessories</option>
         </select>
-            </section>
         <div class="section">
             <label class="label" asp-for="Price">Price :</label>
             <span asp-validation-for="Price" class="text-danger font-weight-bold"></span>
-            <input class="form-control" asp-for="Price">
+            <input class="form-control" asp-for="Price" value="@Model.Price">
         </div>
         <div class="section">
             <label class="label" asp-for="Img1">First Image URL :</label>
@@ -51,24 +50,24 @@
         <div class="section">
             <label class="label" asp-for="Img2">Second Image URL :</label>
             <span asp-validation-for="Img2" class="text-danger font-weight-bold"></span>
-            <input class="form-control" asp-for="Img2">
+            <input class="form-control" asp-for="Img2" value="@Model.Img2">
         </div>
         <div class="section">
             <label class="label" asp-for="Img3">Third Image URL :</label>
             <span asp-validation-for="Img3" class="text-danger font-weight-bold"></span>
-            <input class="form-control" asp-for="Img3">
+            <input class="form-control" asp-for="Img3" value="@Model.Img3">
         </div>
         <div class="section">
             <label class="label" asp-for="Img4">Fourth Image URL :</label>
             <span asp-validation-for="Img4" class="text-danger font-weight-bold"></span>
-            <input class="form-control" asp-for="Img4">
+            <input class="form-control" asp-for="Img4" value="@Model.Img4">
         </div>
         <div class="section">
             <label class="label" asp-for="Description">Description of product :</label>
             <span asp-validation-for="Description" class="text-danger font-weight-bold"></span>
-            <textarea asp-for="Description"></textarea>
+            <input class="form-control" asp-for="Description" value="@Model.Description">
         </div>
-        <button class="atcbutton">Add Product</button>
+        <button class="button-56">Update Product</button>
     </form>
             </div>
     </main>

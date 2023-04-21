@@ -7,12 +7,60 @@
     <link rel="stylesheet" href="~/css/products/viewone.css">
     <title>Document</title>
 </head>
+@model Product
 <body>
     <header>
         @await Html.PartialAsync("ProductPartials/_NavBar")
     </header>
     <main>
+        <div class="viewdiv">
+        @{
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            if(Context.Session.GetInt32("uid") == 1) 
+            {
+                <div class="leftofview">
+                    <img class="bigimg" src="@Model.Img1" alt="Post Photo">
+                    <div class="lilpics">
+                        <img class="lilimgs" src="@Model.Img2" alt="Img 2">
+                        <img class="lilimgs" src="@Model.Img3" alt="Img 2">
+                        <img class="lilimgs" src="@Model.Img4" alt="Img 2">
+                    </div>
+                </div>
+                <div class="rightofview">
+                    <div class="nameandprice">
+                        <h1 class="prodname">@Model.Name</h1>
+                        <h5 class="prodprice">$@Model.Price</h5>
+                    </div>
+                    <h5 class="category">Category: @Model.Category</h5>
+                    <h6 class="description">@Model.Description</h6>
+                <div class="vieweditanddeletebuttons" class="d-flex">
+                    <a href="/codepink/delete/@Model.ProductId"><button class="deletebutton">Delete</button></a>
+                    <a href="/codepink/edit/@Model.ProductId" class="editbutton">Edit</a>
+                </div>
+                </div>
+                }
+            else {
+              <div class="leftofview">
+                    <img class="bigimg" src="@Model.Img1" alt="Post Photo">
+                    <div class="lilpics">
+                        <img class="lilimgs" src="@Model.Img2" alt="Img 2">
+                        <img class="lilimgs" src="@Model.Img3" alt="Img 2">
+                        <img class="lilimgs" src="@Model.Img4" alt="Img 2">
+                    </div>
+                </div>
+                <div class="rightofview">
+                    <div class="nameandprice">
+                        <h1 class="prodname">@Model.Name</h1>
+                        <h5 class="prodprice">$@Model.Price</h5>
+                    </div>
+                    <h5 class="category">Category: @Model.Category</h5>
+                    <h6 class="description">@Model.Description</h6>
+                    <button class="atcbutton">ADD TO CART</button>
+                </div>
+            }
+            }
 
+        </div>
     </main>
     <footer>
         @await Html.PartialAsync("ProductPartials/_Footer")

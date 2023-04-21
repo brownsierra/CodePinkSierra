@@ -49,6 +49,7 @@ nav div a {
     margin-left: -70px;
     text-align: center;
 	margin-top: 3vh;
+  background-color: black;
 }
 li:hover ul#submenu {
     opacity: 1;
@@ -60,6 +61,111 @@ li:hover ul#submenu {
 
 
 
+/* MAIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.viewdiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
+.leftofview {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10vh;
+}
+.rightofview {
+  margin-left: 1vh;
+  width: 90vh;
+}
+.nameandprice {
+  display: flex;
+  flex-direction: row;
+  width: 70vh;
+  justify-content: space-between;
+}
+.prodname {
+  color: white;
+  font-family: "PP Editorial New";
+  font-weight: 900;
+  font-style: italic;
+  font-size: 90px;
+}
+.prodprice {
+  color: white;
+  font-family: "PP Editorial New";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+}
+.category {
+  color: white;
+  font-family: 'Gilroy';
+  font-size: 30px;
+  margin-top: -10vh;
+}
+.description {
+  color: white;
+  font-family: 'Gilroy';
+  font-size: 22px;
+}
+.deletebutton {
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border: none;
+  font-family: "PP Editorial New";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+}
+.editbutton {
+  text-decoration: none;
+  color: white;
+  font-family: "PP Editorial New";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+}
+.vieweditanddeletebuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bigimg {
+  height: 60vh;
+  border-radius: 15px;
+  width: 90vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.lilimgs {
+  border-radius: 5px;
+  width: 27vh;
+}
+.lilpics {
+  display: flex;
+  flex-direction: row;
+  width: 90vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.atcbutton {
+  /* margin-left: 20vh; */
+  padding: 12px 18px;
+  border: none;
+  align-self: flex-start;
+  background-color: #ff6f93;
+  color: #fff;
+  border-radius: 12px;
+  transition: 300ms;
+  font-weight: bold;
+}
+
+.atcbutton:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #fc55a0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 
 /* FOOTER */
 footer {

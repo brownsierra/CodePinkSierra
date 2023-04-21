@@ -73,14 +73,7 @@ public class ProductController : Controller
         List<Product> Furniture = db.Products.Where(p => p.Category == "Furniture").ToList();
         return View("Furniture", Furniture);
     }
-    
-    [HttpGet("/codepink/shop/deskaccessories")]
-    public IActionResult DeskAccessories()
-    {
-        List<Product> DeskAccessory = db.Products.Where(p => p.Category == "Desk Accessories").ToList();
-        return View("DeskAccessories", DeskAccessory);
-    }
-        
+
     [HttpGet("/codepink/shop/earphones")]
     public IActionResult Earphones()
     {
@@ -89,11 +82,11 @@ public class ProductController : Controller
     }
 
     
-    [HttpGet("/codepink/shop/techaccessories")]
+    [HttpGet("/codepink/shop/accessories")]
     public IActionResult TechA()
     {
-        List<Product> TechAccessory = db.Products.Where(p => p.Category == "Tech Accessories").ToList();
-        return View("TechAccessories", TechAccessory);
+        List<Product> Accessory = db.Products.Where(p => p.Category == "Accessories").ToList();
+        return View("TechAccessories", Accessory);
     }
 
     [HttpGet("/codepink/shop")]
@@ -119,7 +112,7 @@ public class ProductController : Controller
         else
         {
             Console.WriteLine("I am here2");
-            return View("ViewOne", product);
+            return RedirectToAction("AllProducts", product);
         }
     }
 
@@ -142,7 +135,7 @@ public class ProductController : Controller
         {
             db.Products.Add(p);
             db.SaveChanges();
-            return RedirectToAction("AllProducts");
+            return RedirectToAction("CodePink");
         }
         return View("AddOne");
     }
@@ -171,12 +164,12 @@ public class ProductController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return EditProduct(productId);
+            return RedirectToAction("EditProduct");
         }
         Product? item = db.Products.FirstOrDefault(item => item.ProductId == productId);
         if (item == null || item.UserId != HttpContext.Session.GetInt32("uid"))
         {
-            return RedirectToAction("AllProducts");
+            return RedirectToAction("CodePink");
         }
         else
         {
@@ -187,14 +180,14 @@ public class ProductController : Controller
             item.Img2 = p.Img2;
             item.Img3 = p.Img3;
             item.Img4 = p.Img4;
-            item.Img5 = p.Img5;
             item.Description = p.Description;
             item.UpdatedAt = DateTime.Now;
 
             db.Products.Update(item);
             db.SaveChanges();
+            Product? itemtest = db.Products.FirstOrDefault(item => item.ProductId == productId);
 
-            return RedirectToAction("ViewOne", new { productId = productId });
+            return RedirectToAction("ViewOne", itemtest);
         }
     }
 
@@ -208,7 +201,7 @@ public class ProductController : Controller
             db.Products.Remove(item);
             db.SaveChanges();
         }
-        return RedirectToAction("AllProducts");
+        return RedirectToAction("CodePink");
     }
 
 

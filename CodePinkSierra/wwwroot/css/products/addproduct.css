@@ -10,7 +10,7 @@ nav {
     height: 10vh;
 	margin-bottom: 40px;
 	align-items: flex-start;
-    background-color: #151414;
+    background-color: black;
     margin-top: -1vh;
 
 }
@@ -19,6 +19,10 @@ nav div a {
 	font-family: 'Clash Display';
 	font-weight: bold;
 	text-decoration: none;
+}
+nav div a:hover {
+  color: #ff89c4;
+  transition: 0.3s;  
 }
 #cartimg {
 	height: 4vh;
@@ -40,27 +44,47 @@ nav div a {
     align-items: center;
 }
 #submenu {
-    /* left: 0;
-    right: 0; */
+    margin-top: 1px;
     opacity: 0;
     position: absolute;
     top: 35px;
     visibility: hidden;
     z-index: 1;
+    margin-left: -8vh;
     list-style-type: none;
-}
-#submenu li {
+  }
+  #submenu li {
     float: none;
     width: 170%;
-    margin-left: -70px;
+    margin-left: -80px;
     text-align: center;
-	margin-top: 3vh;
-}
-li:hover ul#submenu {
+    background-color: #000;
+    padding: 10px;
+  
+  }
+  #submenu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Clash Display', sans-serif;
+    background-color: #000;
+    padding-bottom: 5px;
+  }
+  #submenu li a:hover {
+    color: #ff80bf;
+    transition: 0.3s;
+  }
+  #topsublink {
+    margin-top: 2vh;
+  }
+  li:hover ul#submenu {
     opacity: 1;
     top: 50px;
     visibility: visible;
-}
+  }
+  #snavbardrop {
+    margin-bottom: -20px;
+  }
 
 
 
@@ -84,22 +108,76 @@ li:hover ul#submenu {
 
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
 
 }
 .form-control {
     width: 200px;
 }
 label {
-    width: 200px;
+    width: 250px;
+    font-family: "PP Editorial New";
 }
 .section {
-    margin-bottom: 10px;
+  margin-bottom: 2vh;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
 }
 #Category {
     width: 200px;
+}
+input {
+  width: 700px;
+  height: 35px;
+  border-radius: 15px;
+  font-family: "PP Editorial New";
+}
+.atcbutton {
+  /* margin-left: 20vh; */
+  padding: 12px 18px;
+  border: none;
+  align-self: flex-start;
+  background-color: #ff6f93;
+  color: #fff;
+  border-radius: 12px;
+  transition: 300ms;
+  font-weight: bold;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.atcbutton:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #fc55a0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.option {
+  font-family: "PP Editorial New";
+}
+.select {
+  width: 320px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+#catlabel {
+  margin-left: -20vh;
+  margin-right: 22vh;
+  margin-bottom: 5vh;
+}
+#catsection {
+  margin-bottom: 2vh;
+}
+textarea {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 150px;
 }
 
 

@@ -18509,11 +18509,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\CodePinkSierra\\Views\\Product\\ViewProduct.cshtml",
-      "TargetPath": "Views\\Product\\ViewProduct.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\CodePinkSierra\\Views\\Product\\IndexPartials\\_Herotop.cshtml",
       "TargetPath": "Views\\Product\\IndexPartials\\_Herotop.cshtml",
       "FileKind": "mvc"
@@ -18611,6 +18606,11 @@
     {
       "FilePath": "c:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\CodePinkSierra\\Views\\Product\\IndexPartials\\_ZoomKits.cshtml",
       "TargetPath": "Views\\Product\\IndexPartials\\_ZoomKits.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\brown\\OneDrive\\Desktop\\CodePinkSierra\\CodePinkSierra\\Views\\Product\\Edit.cshtml",
+      "TargetPath": "Views\\Product\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
